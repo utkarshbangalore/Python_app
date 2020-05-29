@@ -129,7 +129,7 @@ def lambda_handler(event, context):
             conn.close()
         invokeConnCountManager(False)
 
-	content =  "Selected %d items from RDS MySQL table" % (item_count)
+	content =  "Selected %d items from RDS_PASSWORD connection MySQL table" % (item_count)
     response = {
         "statusCode": 200,
         "body": content,
