@@ -75,7 +75,7 @@ def lambda_handler(event, context):
             conn.close()
         invokeConnCountManager(False)
 
-	content =  "<html><head><title>Security Jam</title></head> <body><html><body>Selected %d items from AWS RDS MySQL table</body></html></body></html>" % (item_count)
+	content =  "<html><head><title>Security Jam</title></head> <body><html><body>Selected %d items from AWS RDS MySQL Bucket table</body></html></body></html>" % (item_count)
     response = {
         "statusCode": 200,
         "body": content,
