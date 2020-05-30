@@ -129,7 +129,7 @@ def lambda_handler(event, context):
             conn.close()
         invokeConnCountManager(False)
 
-	content =  "Selected %d items from CI/CD with lambda function over aws done connection MySQL table" % (item_count)
+	content =  "Selected %d items from CI/CD lambda function secret manager MySQL table" % (item_count)
     response = {
         "statusCode": 200,
         "body": content,
